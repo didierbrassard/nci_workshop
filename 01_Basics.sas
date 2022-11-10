@@ -218,7 +218,10 @@
 	run;
 	title1;
 
-/* 4) Check Assumption 2 - StD(W) reflects variance of both `true` intakes and (random) errors */
+/* 4) Check Assumption 2 - Measurement error does not depend on X */
+
+	/* note: StD(W) reflects variance of both `true` intakes and (random) errors */
+
 	proc sgplot data=energy_wide1;
 	title1 "Is there any trend between Mean(W) and StD(W)?";
 	loess x=energy_r_mean y=energy_r_std / lineattrs=(color=red) markerattrs=(color=gray) ;
