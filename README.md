@@ -9,3 +9,5 @@ Before diving into measurement error correction methods, I recommend two introdu
 SAS codes (01, 02, ... 04) are provided as an introduction to basic aspects of random measurement errors and application of the NCI univariate method to generate a distribution of usual dietary intakes.
 
 A companion presentation is [available here](https://drive.google.com/file/d/1VKxCEDkiGSCbAYVioob-s4krjDJut4uT/view?usp=sharing).
+
+The original NCI macros and further examples are available on the [Biometry Research Group's *Software for Measurement Error in Nutrition Research* website](https://prevention.cancer.gov/research-groups/biometry/measurement-error-impact/software-measurement-error)
