@@ -48,28 +48,28 @@ website](https://prevention.cancer.gov/research-groups/biometry/measurement-erro
 ``` mermaid
 %%{init: {&#39;theme&#39;: &#39;neutral&#39; } }%%
 flowchart TB
-subgraph data[&lt;b&gt;Repeated dietary assessment&lt;/b&gt;]
-    R1(&quot;24-hour recall #1&quot;)
-    R2(&quot;24-hour recall #2&quot;)
-    R3(&quot;24-hour recall #J&quot;)
+subgraph data[<b>Repeated dietary assessment</b>]
+    R1("24-hour recall #1")
+    R2("24-hour recall #2")
+    R3("24-hour recall #J")
 end
-subgraph C[&lt;b&gt;Covariates&lt;/b&gt;]
-    N(Sequence,&lt;br&gt;weekend, season)
+subgraph C[<b>Covariates</b>]
+    N(Sequence,<br>weekend, season)
     Z(Subgroups)
 end
-subgraph A[&lt;b&gt;Assumptions&lt;/b&gt;]
-    S1(Statistical&lt;br&gt;assumptions)
-    S2(Classical error&lt;br&gt;model assumptions)
+subgraph A[<b>Assumptions</b>]
+    S1(Statistical<br>assumptions)
+    S2(Classical error<br>model assumptions)
 end
-    data --&gt;M[&lt;b&gt;Measurement error model&lt;/b&gt;]
-    C--&gt;M
-    A--&gt;M
-    M--&gt;P1[&quot;Model parameters&quot;]
-    P1--&gt;P2[&quot;Predicted intakes&quot;]
-    M--&gt;P3[Within- &amp; between-&lt;br&gt;individual variance]
-    P3--&gt;P2
-    P1 &amp; P2--&gt;MC[&quot;&lt;b&gt;Monte Carlo simulations&lt;/b&gt;&quot;]
-    MC--&quot;&lt;I&gt;M&lt;/I&gt; simulations&lt;br&gt;per individual&quot;--&gt;PI[&quot;&lt;b&gt;&#39;Usual intakes&#39; among&lt;br&gt;(&lt;I&gt;M*n&lt;/I&gt;) pseudo-individuals&quot;]
+    data -->M[<b>Measurement error model</b>]
+    C-->M
+    A-->M
+    M-->P1["Model parameters"]
+    P1-->P2["Predicted intakes"]
+    M-->P3[Within- & between-<br>individual variance]
+    P3-->P2
+    P1 & P2-->MC["<b>Monte Carlo simulations</b>"]
+    MC--"<I>M</I> simulations<br>per individual"-->PI["<b>'Usual intakes' among<br>(<I>M*n</I>) pseudo-individuals"]
     
 ```
 
