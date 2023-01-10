@@ -54,3 +54,4 @@ data/.DS_Store
 /share/
 /reference/
 /presentation/
+*.qmd
