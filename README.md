@@ -46,7 +46,7 @@ website](https://prevention.cancer.gov/research-groups/biometry/measurement-erro
 ## Schematic overview
 
 ``` mermaid
-%%{init: {&#39;theme&#39;: &#39;neutral&#39; } }%%
+%%{init: {'theme': 'neutral' } }%%
 flowchart TB
 subgraph data[<b>Repeated dietary assessment</b>]
     R1("24-hour recall #1")
@@ -71,12 +71,4 @@ end
     P1 & P2-->MC["<b>Monte Carlo simulations</b>"]
     MC--"<I>M</I> simulations<br>per individual"-->PI["<b>'Usual intakes' among<br>(<I>M*n</I>) pseudo-individuals"]
     
-```
-
-``` mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
 ```
