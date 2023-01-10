@@ -45,7 +45,6 @@ website](https://prevention.cancer.gov/research-groups/biometry/measurement-erro
 ## Schematic overview
 
 ``` mermaid
-%%{init: {&#39;theme&#39;: &#39;neutral&#39; } }%%
 flowchart TB
 subgraph data[&lt;b&gt;Repeated dietary assessment&lt;/b&gt;]
     R1(&quot;24-hour recall #1&quot;)
