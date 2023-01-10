@@ -1,5 +1,6 @@
 National Cancer Institute (NCI) methods workshop
 ================
+Didier Brassard
 
 This workshop is an introduction to random measurement errors in
 nutrition research. While it is obvious that a systematic error
@@ -9,11 +10,11 @@ many cases, random errors can be as problematic as systematic errors if
 they are ignored.
 
 Before diving into measurement error correction methods, I recommend two
-introduction blog posts on the topic: *[‘Statistical concept you should
+introduction blog posts on the topic: [*‘Statistical concept you should
 know’: random and systematic measurement
-errors](https://didierbrassard.github.io/posts/2022/11/blog-post-6/)*
-and *[Impact of random errors: two nutrition
-examples](https://didierbrassard.github.io/posts/2022/11/blog-post-7/)*.
+errors*](https://didierbrassard.github.io/posts/2022/11/blog-post-6/)
+and [*Impact of random errors: two nutrition
+examples*](https://didierbrassard.github.io/posts/2022/11/blog-post-7/).
 Useful reference includes *Using Short-Term Dietary Intake Data to
 Address Research Questions Related to Usual Dietary Intake among
 Populations and Subpopulations: Assumptions, Statistical Techniques, and
@@ -45,6 +46,7 @@ website](https://prevention.cancer.gov/research-groups/biometry/measurement-erro
 ## Schematic overview
 
 ``` mermaid
+%%{init: {&#39;theme&#39;: &#39;neutral&#39; } }%%
 flowchart TB
 subgraph data[&lt;b&gt;Repeated dietary assessment&lt;/b&gt;]
     R1(&quot;24-hour recall #1&quot;)
@@ -68,5 +70,13 @@ end
     P3--&gt;P2
     P1 &amp; P2--&gt;MC[&quot;&lt;b&gt;Monte Carlo simulations&lt;/b&gt;&quot;]
     MC--&quot;&lt;I&gt;M&lt;/I&gt; simulations&lt;br&gt;per individual&quot;--&gt;PI[&quot;&lt;b&gt;&#39;Usual intakes&#39; among&lt;br&gt;(&lt;I&gt;M*n&lt;/I&gt;) pseudo-individuals&quot;]
+    
+```
 
+``` mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
 ```
