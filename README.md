@@ -27,13 +27,13 @@ al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32246539/)
 
 ## NCI univariate method, distribution
 
-SAS codes (01, 02, … 04) are provided as an introduction to basic
+SAS codes (01, 11, 12, …) are provided as an introduction to basic
 aspects of random measurement errors and application of the NCI
 univariate method to generate a distribution of usual dietary intakes.
 
-The *03_Univariate_2part_exercise.sas* code is intended as an exercise
+The *12_Univariate_2part_exercise.sas* code is intended as an exercise
 to practice using the univariate method. The answers are provided in
-*03_Univariate_2part.sas*.
+*12_Univariate_2part.sas*.
 
 A companion presentation is [available
 here](https://drive.google.com/file/d/1VKxCEDkiGSCbAYVioob-s4krjDJut4uT/view?usp=sharing).
