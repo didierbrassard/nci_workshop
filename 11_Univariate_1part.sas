@@ -2,7 +2,7 @@
  /*                                                                       */
  /*                   National Cancer Institute Method                    */
  /*                                                                       */
- /*  Code 02. Univariate: measurement error model, MC Sim., distribution  */
+ /*  Code 11. Univariate: measurement error model, MC Sim., distribution  */
  /*                                                                       */
  /*                        Author: Didier Brassard                        */
  /*                                                                       */
@@ -783,5 +783,5 @@ title2 "Adults 19-30 y from CCHS 2015";
 /* 		  cutprob4 = "Pr(X<3000)" */
 /* 		  cutprob5 = "Pr(X<3500)" */
 	
-/* end of code 02 */
+/* end of code 11 */
 		 
