@@ -2,7 +2,7 @@
  /*                                                                       */
  /*                   National Cancer Institute Method                    */
  /*                                                                       */
- /*               Code 14. Univariate, same as 11, ONE PART               */
+ /*               Code 13. Univariate, same as 11, ONE PART               */
  /*                                                                       */
  /*                        Author: Didier Brassard                        */
  /*                                                                       */
@@ -612,4 +612,4 @@
 	where sex=-255; *all;
 	run;
 
-/* end of code 14 */
+/* end of code 13 */
