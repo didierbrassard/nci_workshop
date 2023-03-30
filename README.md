@@ -98,27 +98,29 @@ website](https://prevention.cancer.gov/research-groups/biometry/measurement-erro
 ``` mermaid
 %%{init: {'theme': 'neutral' } }%%
 flowchart TB
-    subgraph data[<b>Repeated dietary assessment</b>]
-        R1("24-hour recall #1")
-        R2("24-hour recall #2")
-        R3("24-hour recall #J")
-    end
-    subgraph C[<b>Covariates</b>]
-        N(Sequence,<br>weekend, season)
-        Z(Subgroups)
-    end
-    subgraph A[<b>Assumptions</b>]
-        S1(Statistical<br>assumptions)
-        S2(Classical error<br>model assumptions)
-    end
-        data -->M[<b>Measurement error model</b>]
-        C-->M
-        A-->M
-        M-->P1["Model parameters"]
-        P1-->P2["Predicted intakes"]
-        M-->P3[Within- & between-<br>individual variance]
-        P3-->P2
-        P1 & P2-->MC["<b>Monte Carlo simulations</b>"]
-        MC--"<I>M</I> simulations<br>per individual"-->PI["<b>'Usual intakes' among<br>(<I>M*n</I>) pseudo-individuals"]
+subgraph data[<b>Repeated dietary assessment</b>]
+    R1("24-hour recall #1")
+    R2("24-hour recall #2")
+    R3("24-hour recall #J")
+    RT("Dietary constituents")
+    R1 & R2 & R3-->RT
+end
+subgraph C[<b>Covariates</b>]
+    N(Sequence,<br>weekend,<br>season)
+    Z(Subgroups)
+end
+subgraph A[<b>Assumptions</b>]
+    S1(Statistical<br>assumptions)
+    S2(Classical error<br>model assumptions)
+end
+    data --"Box-Cox<br>transformation"-->M[<b>Step 1<br>Measurement error model</b>]
+    C-->M
+    A-->M
+    M-->P1["Model parameters"]
+    P1-->P2["Predicted intakes"]
+    M-->P3[Within- & between-<br>individual variance]
+    P3-->P2
+    P1 & P2-->MC["<b>Step 2<br>Monte Carlo simulations</b>"]
+    MC--"<I>M</I> simulations<br>per individual"-->PI["<b>Step 3<br>'Usual intakes' distribution<br>calculation among<br>(<I>M*n</I>) pseudo-individuals"]
     
 ```
