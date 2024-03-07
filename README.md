@@ -50,9 +50,9 @@ flowchart TD
   S1{"Mean<br>only"}
   S2{"Distribution or<br>prevalence"}
   S3{"Regression<br>coefficient"}
-  S1-->Q4("Is there a <b>scoring</b> <br>(e.g., diet quality score)?")
-  Q4--Yes-->F1
-  Q4--No-->F2
+  S1-->Q4("Is there a <b>scoring</b> <br>(eg, diet quality score)<br>or a <b>ratio</b><br>(eg, % of total energy)?")
+  Q4--"Yes"-->F1
+  Q4--"No"-->F2
   F1{{"Use the<br>population ratio<br>method"}}
   Q1-->S1
   Q2("Are <b>repeated data</b><br>available for n>50?")
@@ -63,10 +63,11 @@ flowchart TD
   Q3--"No"-->F2
   F2{{"Measurement error<br>correction not needed"}}
   S2-->Q2
-  Q2--Yes-->F3
+  Q2--"Yes"-->F3
   F3{{"Apply measurement error<br>correction methods"}}
-  Q2--No-->F4
+  Q2--"No"-->F4
   F4{{"Use raw data,<br>assess bias with simulation,<br> acknowledge limitation"}}
+
 
 ```
 
