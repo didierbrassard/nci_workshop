@@ -2,7 +2,7 @@
  /*                                                                       */
  /*                   National Cancer Institute Method                    */
  /*                                                                       */
- /*               Code 12. Univariate, same as 12, TWO PART               */
+ /*               Code 12. Univariate, same as 11, TWO PART               */
  /*                                                                       */
  /*                        Author: Didier Brassard                        */
  /*                                                                       */
